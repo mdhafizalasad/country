@@ -16,6 +16,11 @@
         <div class="flex-1">
           <a class="btn btn-ghost text-xl">Website</a>
         </div>
+        <div class="flex justify-center my-5">
+          <input id="search-input" type="text" placeholder="Search your food on here" class="input input-bordered w-96" style="margin-right: 10px;" />
+          <button id="search-button" class="btn btn-neutral">Search</button>
+ </div>
+
         <div class="flex-none">
           <ul class="menu menu-horizontal px-1">
             <li><a href="index.html">Country</a></li>
@@ -25,13 +30,10 @@
         </div>
       </div>
 
-    
-      <div class="flex justify-center my-5">
-               <input id="search-input" type="text" placeholder="Search your food on here" class="input input-bordered w-96"  />
-               <button id="search-button" class="btn btn-neutral">Search</button>
-      </div>
+      <div id="food-details" class="border border-3 mx-auto text-center"></div>
+      <div id="foods-div" class="grid grid-cols-3 gap-7 container mx-auto"></div>
      
-    <div id="countries"></div>
+    
 
     <script src="./js/food.js"></script>
 
